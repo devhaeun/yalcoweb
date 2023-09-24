@@ -1,0 +1,40 @@
+h1, h2 {
+    font-family: 'Noto Snas KR', snas-serif;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #555;
+
+    display: block;
+}
+
+h2 {
+    margin-top: 1.2em;
+    margin-bottom: 0.48em;
+    font-size: 0.9em;
+    font-weight: 900;
+    color:slateblue;
+
+    display: block;
+    margin-block-start: 0.83em;
+}
+
+h2::before {
+    content: '▶';
+    font-size: 0.5em;
+    margin-right: 8px;
+    opacity: 0.33;
+}
+
+i {
+    color: lightseagreen;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+abbr {
+    text-decoration: underline dotted;
+}

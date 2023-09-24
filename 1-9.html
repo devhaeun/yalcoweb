@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자로부터 입력 받기 2</title>
+    <style>
+        h1 {
+            color:#555;
+            font-size: 1.2em;
+        }
+        h2{
+            color:slateblue;
+            font-size: 0.9em;
+            font-weight: 900;
+        }
+        h2::before {
+            content: '▶';
+            font-size: 0.5em;
+            margin-right:8px;
+            opacity: 0.33;
+        }
+    </style>
+</head>
+<body>
+    <h1>텍스트 관련 인풋 타입</h1>
+
+    <form action="#">
+        <label for="text">text</label><br>
+        <input type="text" id="text" placeholder="5자 이하" maxlength="5">
+        <br><br>
+        <label for="ps">password</label><br>
+        <input type="password" id="ps" placeholder="4자 이상" minlength="4">
+        <br><br>
+        <label for="search">search</label><br>
+        <input type="search" id="search">
+        <br><br>
+        <label for="telephone">tel</label><br>
+        <input type="tel" id="telephone">
+        <br><br>
+
+        <button type="submit">제출</button>
+    </form>
+
+    <br><br>
+
+    <h1>숫자 관련 인풋 타입</h1>
+    <form action="#">
+        <label for="number_">number</label><br>
+        <input type="number" id="number_" min="0" max="10">
+        <br><br>
+        <label for="rangeIp">range</label><br>
+        <input type="range" id="rangeIp" min="0" max="100" step="20">
+        <br><br>
+        <label for="dateIp">date</label><br>
+        <input type="date" id="dateIp" min="2020-01-01" max="2030-12-31">
+        <br><br>
+    </form>
+
+    <br><br>
+
+    <h1>체크 관련 인풋 타입</h1>
+    <form action="#">
+        <h2>checkbox</h2>
+        <input type="checkbox" id="cbIp" checked>
+        <label for="cbIp">유기농</label>
+        <br>
+        <h2>radio</h2>
+        <input type="radio" name="fruit" id="f_apple" value="apple" checked>
+        <label for="f_apple">사과</label>
+        <input type="radio" name="fruit" id="f_grape" value="grape">
+        <label for="f_grape">포도</label>
+        <input type="radio" name="fruit" id="f_orange" value="orange">
+        <label for="f_orange">오렌지</label>
+        <br>
+        <input type="radio" name="vege" id="v_carrot" value="carrot" checked>
+        <label for="v_carrot">당근</label>
+        <input type="radio" name="vege" id="v_tomato" value="tomato">
+        <label for="v_tomato">토마토</label>
+        <input type="radio" name="vege" id="v_eggplant" value="eggplant">
+        <label for="v_eggplant">가지</label>
+    </form>
+
+    <br><br>
+
+    <h1>기타 인풋 타입</h1>
+    <form action="#">
+        <label for="fileIp">file</label><br>
+        <input type="file" id="fileIp" accept="image/png, image/jpeg" multiple>
+        <br><br>
+        <label for="hiddenIp">hidden</label><br>
+        <input type="hidden" id="hiddenIp">
+        <br>
+        <hr>
+        <br>
+        <label for="emailIp">email</label><br>
+        <input type="email" id="emailIp">
+        <br><br>
+        <button>제출</button>
+    </form>
+
+    <br><br>
+
+    <h1>인풋 요소 공통(대부분) 속성</h1>
+    <form action="#">
+        <label for="valueIp">value</label><br>
+        <input type="text" id="valueIp" value="지정됨">
+        <br><br>
+        <label for="afIp">autofocus</label><br>
+        <input type="text" id="afIp" placeholder="자동 포커스됨" autofocus>
+        <br><br>
+        <label for="roIp">readonly</label><br>
+        <input type="text" id="roIp" placeholder="읽기만 가능, 전송됨" readonly>
+        <br><br>
+        <label for="rqIp">required</label><br>
+        <input type="text" id="rqIp" placeholder="필수입력!" required>
+        <br><br>
+        <label for="daIp">disabled</label><br>
+        <input type="text" id="daIp" palceholder="입력불가, 전송 안됨" disabled>
+        <br><br>
+        <input type="radio" name="fruit" id="f__apple" value="apple" checked>
+        <label for="f__apple">사과</label>
+        <input type="radio" name="fruit" id="f__grape" value="grape">
+        <label for="f__grape">포도</label>
+        <input type="radio" name="fruit" id="f__orange" value="orange" disabled>
+        <label for="f__orange">오렌지(품절)</label>
+        <br><br><br>
+        <button>제출</button>
+    </form>
+</body>
+</html>

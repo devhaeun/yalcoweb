@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자로부터 입력 받기 1</title>
+</head>
+<body>
+    <form action="https://showcases.yalco.kr/html-css/01-08/01-result.html?my-name=&my-age=" method="get">
+        <label for="name">이름</label>
+        <input id="name" name="my-name" type="text">
+        <br><br>
+        <label for="age">나이</label>
+        <input id="age" name="my-age" type="text">
+        <br><br>
+        <button type="submit">제출</button>
+        <button type="reset">초기화</button>
+    </form>
+
+    <br><br>
+
+    <fieldset>
+        <legend>반장</legend>
+        <label for="name1">이름</label>
+        <input type="text" name="반장name" id="name1">
+        <br><br>
+        <label for="age1">나이</label>
+        <input type="number" name="반장age" id="age1">
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>부반장</legend>
+        <label for="name2">이름</label>
+        <input type="text" name="부반장name" id="name2">
+        <br><br>
+        <label for="age2">나이</label>
+        <input type="number" name="부반장age" id="age2">
+    </fieldset>
+    <br>
+    <fieldset disabled>
+        <legend>서기</legend>
+        <label for="name3">이름</label>
+        <input type="text" name="서기name" id="name3">
+        <br><br>
+        <label for="age3">나이</label>
+        <input type="number" name="서기age" id="age3">
+    </fieldset>
+</body>
+</html>
